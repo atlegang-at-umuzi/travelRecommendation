@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Recommendation</title>
-    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="travel_recommendation.css" />
     <script src="travel_recommendation.css" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo" onclick="showPage('home')">🌍 TravelBloom</a>
+        <ul class="nav-links">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+          <li class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search destinations..."
+            />
+            <button class="btn btn-search" onclick="searchRecommendations()">
+              Search
+            </button>
+            <button class="btn btn-reset" onclick="clearResults()">
+              Reset
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
 </html>
